@@ -7,7 +7,7 @@ See: https://w3c.github.io/webrtc-pc/#idl-def-RTCDataChannel
 package webrtc
 
 /*
-#cgo CXXFLAGS: -std=c++0x
+#cgo CXXFLAGS: -std=c++11
 #cgo LDFLAGS: -L${SRCDIR}/lib
 #cgo android pkg-config: webrtc-android-armeabi-v7a.pc
 #cgo linux,arm pkg-config: webrtc-linux-arm.pc
