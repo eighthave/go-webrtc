@@ -119,6 +119,13 @@ ubuntu-lts:
   <<: *artifacts-template
   <<: *script-template
 
+build-from-scratch:
+  image: debian:testing
+  <<: *artifacts-template
+  script:
+    - *build_env_setup
+    - ./build-gnu-linux.sh
+
 libwebrtc-linux-amd64-magic:
   only:
     - schedules
